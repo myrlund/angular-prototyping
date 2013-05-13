@@ -1,9 +1,14 @@
 <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+  <h1>Fancy Comoyo Prototyping</h1>
+  <br>
+
+  <p>Here are some fancy words:</p>
+  <ol>
+      <li ng-repeat="word in fancyWords">{{word}}</li>
+  </ol>
+
+  <form class="form-inline" ng-submit="addWord()">
+    <input type="text" ng-model="newWord" placeholder="A fancy word...">
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
 </div>
