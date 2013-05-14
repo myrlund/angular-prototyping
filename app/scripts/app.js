@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('PrototypingApp', [])
+angular.module('PrototypingApp', ['firebase'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
